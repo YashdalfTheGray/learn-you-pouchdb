@@ -1,0 +1,9 @@
+{
+  "couchdb": {
+    "database_dir": "db/"
+  },
+  "log": {
+    "level": "info",
+    "file": "db/log.txt"
+  }
+}
