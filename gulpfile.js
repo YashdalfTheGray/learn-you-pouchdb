@@ -105,7 +105,7 @@ gulp.task('start:pouchdb', function(cb) {
     gutil.log('PouchDB server is now ' + chalk.green('running') + ' on port ' + chalk.cyan('5984') + '. ');
 });
 
-gulp.task('clear:modules', function() {
+gulp.task('clean:modules', function() {
     return del('node_modules');
 });
 
