@@ -1,0 +1,28 @@
+{
+  "name": "learn-you-pouchdb",
+  "version": "1.0.0",
+  "description": "Learning Pouchdb by creating a node API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashdalfTheGray/learn-you-pouchdb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashdalfTheGray/learn-you-pouchdb/issues"
+  },
+  "homepage": "https://github.com/YashdalfTheGray/learn-you-pouchdb#readme",
+  "devDependencies": {
+    "body-parser": "^1.14.2",
+    "chalk": "^1.1.1",
+    "express": "^4.13.3",
+    "lodash": "^4.0.0",
+    "morgan": "^1.6.1",
+    "pouchdb": "^5.2.0",
+    "pouchdb-server": "^1.0.0"
+  }
+}
