@@ -61,6 +61,9 @@ gulp.task('usage', function() {
         chalk.green('init'),
         '\tinitializes the db directory for PouchDB.',
         '',
+        chalk.green('generate'),
+        '\tadds a bunch of sample data to the playground database.',
+        '',
         chalk.green('start:nodeserver'),
         '\tstarts the node server at port 8000.',
         '',
@@ -88,6 +91,16 @@ gulp.task('init', function() {
     "use strict";
     return file('log.txt', '')
         .pipe(gulp.dest('db'));
+});
+
+gulp.task('generate', function(cb) {
+    "use strict";
+    nodemon({
+        script: 'src/generateDatabase.js',
+        watch: 'src/generateDatabase.js'
+    }).on('exit', function() {
+        process.exit(0);
+    });
 });
 
 gulp.task('start:nodeserver', function() {
